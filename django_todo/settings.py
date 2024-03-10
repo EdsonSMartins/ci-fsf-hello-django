@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+ALLOWED_HOSTS = ['8000-edsonsmarti-cifsfhellod-2rau7hgr5cn.ws-eu108.gitpod.io']
 
 
 # Application definition
