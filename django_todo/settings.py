@@ -17,7 +17,7 @@ if os.path.isfile('env.py'):
     import env
 
 development = os.environ.get('DEVELOPMENT', False)
-HEROKU_HOSTNAME = [os.environ.get('HEROKU_HOSTNAME')]
+#HEROKU_HOSTNAME = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,9 +31,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-edsonsmarti-cifsfhellod-2rau7hgr5cn.ws-eu108.gitpod.io', 'HEROKU_HOSTNAME']
+ALLOWED_HOSTS = ['8000-edsonsmarti-cifsfhellod-2rau7hgr5cn.ws-eu108.gitpod.io', 'fsf-hello-django-ci-665ab7e84b35.herokuapp.com']
 
 #if development:
 #    ALLOWED_HOSTS = ['8000-edsonsmarti-cifsfhellod-2rau7hgr5cn.ws-eu108.gitpod.io']
